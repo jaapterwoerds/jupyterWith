@@ -55,7 +55,7 @@
     SYSTEMS = [
       flake-utils.lib.system.x86_64-linux
       # TODO - Fix linux first and then get macos working.
-      # flake-utils.lib.system.x86_64-darwin
+      flake-utils.lib.system.aarch64-darwin
     ];
 
     kernelLib = import ./lib/kernels.nix {inherit self lib;};
